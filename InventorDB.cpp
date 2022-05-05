@@ -45,12 +45,6 @@ void InventorDB::printAlive() {
 
 // Delete all the current nodes and set head & tail to nullptr
 void InventorDB::deleteAllNodes() {
-    while(head != nullptr) {
-        Node *next = head->next;
-        delete head;
-        head = next;
-    }
-    tail = nullptr;
 }
 
 
