@@ -6,15 +6,17 @@
 using namespace std;
 
 /**
-Create the DB and load the default .txt file using the private readFile function.
+Set head and tail to nullptr
 */
 InventorDB::InventorDB(){
-    head = nullptr;
-    tail = nullptr;
 }
 
 InventorDB::~InventorDB() {
     deleteAllNodes();
+}
+
+// Delete all the current nodes and set head & tail to nullptr
+void InventorDB::deleteAllNodes() {
 }
 
 void InventorDB::reload(){
@@ -43,9 +45,6 @@ void InventorDB::print() {
 void InventorDB::printAlive() {
 }
 
-// Delete all the current nodes and set head & tail to nullptr
-void InventorDB::deleteAllNodes() {
-}
 
 
 /**
