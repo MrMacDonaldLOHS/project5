@@ -19,26 +19,22 @@ InventorDB::~InventorDB() {
 void InventorDB::deleteAllNodes() {
 }
 
-void InventorDB::reload(){
-    deleteAllNodes();
-    readFile("AfricanAmericanInventors.txt");
+// Append a new entry at the tail of the list
+void InventorDB::append(Inventor inventor) {
+}
+
+// Traverse the list printing all the data in the nodes
+void InventorDB::print() {
 }
 
 // Insert a new entry at the head of the list
 void InventorDB::insertInFront(Inventor inventor){
 }
 
-// Append a new entry at the tail of the list
-void InventorDB::append(Inventor inventor) {
-}
-
 // If there is an entry at the head of the list, remove it.
 void InventorDB::removeFront() {
 }
 
-// Traverse the list printing all the data in the nodes
-void InventorDB::print() {
-}
 
 // Traverse the list and if a call to isAlive on the data
 // in the node returns true, print that data.
@@ -119,6 +115,11 @@ void InventorDB::dbMenu(){
         }
     }
     
+}
+
+void InventorDB::reload(){
+    deleteAllNodes();
+    readFile("AfricanAmericanInventors.txt");
 }
 
 /**
